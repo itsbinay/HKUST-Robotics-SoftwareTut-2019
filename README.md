@@ -63,4 +63,12 @@ Advanced Tutorial 3 - STM32 Timers/Counters aka encoder, ultrasonic etc
 | Kelvin Leonardo Hartono | klhartono@connect.ust.hk | | PWM |
 | Ho Yu Yat | yyhoai@connect.ust.hk | | C Programming |
 | Umakant Datt Bhatt | udbhatt@connect.ust.hk | 55333042 | C Programming/GPIO |
+| Yau Chin Fai | cfyauab@connect.ust.hk | 97159298 | |
+| Aaron Wang | aswang@connect.ust.hk | | |
+| Anshuman | amedhi@connect.ust.hk | 68925193 | |
+| Clyde Ang | cwsang@connect.ust.hk | 56022648 | |
+| Scarlett Kwok | hckwokae@connect.ust.hk | 90800585 | |
+| Ethan Pang | plpang@connect.ust.hk | | |
+| Lalwani Monesh | mglalwani@connect.ust.hk | 68595343 | |
+| Jack Tse | cytseac@connect.ust.hk | | |
 
