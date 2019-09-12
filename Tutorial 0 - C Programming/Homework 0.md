@@ -3,7 +3,7 @@ Author: Daniel Cheung (dcheungaa@connect.ust.hk)
 Updated and expanded by by Ho Yu Yat (yyhoai@connect.ust.hk)
 
 ##### Submissions and questions:
-Send to Ho Yu Yat (yyhoai@connect.ust.hk) before 15/9 23:59pm.
+Send to Ho Yu Yat (yyhoai@connect.ust.hk) before 15/9 23:59pm for S03 and S04, before 16/9 23:59pm for S01 and S02.
 
 Zip the .c and .h files in each task into separate zip files unless otherwise specified in the task.
 e.g. calculator.zip + sin.zip + ab.zip
