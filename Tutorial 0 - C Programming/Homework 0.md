@@ -193,13 +193,20 @@ int main() {
 //count.h
 
 //in: input char array, len: length of char array
-int CountInnerParameter(char in[], int len) {
-    //Complete the function
+int CountInnerParameter(char in[], int len);
+```
+
+```c
+//count.c
+#include "count.h"
+
+int CountInnerParameter(char in[], int len)  {
+    //TODO: Complete the function
 }
 ```
 
 - Write the function `CountInnerParameter` in a file called `count.h` (no need separate .c file).
-- Send the `count.h` file directly as submission, don't need to zip.
+- Send the `count.c` file directly as submission, don't need to zip.
 
 #### Expected output
 test case 1: input charcter array: `"()"` output:`0` <br/>
