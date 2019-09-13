@@ -90,20 +90,20 @@ Note that I did not use braces `{}` here, that is because when there is only 1 s
 
 int main() {
     for (int i = 1; i <= 100; ++i) {
-        bool isDiv7 = false, isDiv3 = false, isDiv5 = false;
+        bool isDiv = false;
         if (!(i % 7)) {
             printf("*clap*\n");
-            isDiv7 = true;
+            isDiv = true;
         }
         if (!(i % 3)) {
             printf("*click*\n");
-            isDiv3 = true;
+            isDiv = true;
         }
         if (!(i % 5)) {
             printf("*stomp*\n");
-            isDiv5 = true;
+            isDiv = true;
         }
-        if (!isDiv3 && !isDiv5 && !isDiv7) printf("%d\n", i);
+        if (!isDiv) printf("%d\n", i);
     }
 
     return 0;
@@ -112,7 +112,7 @@ int main() {
 
 You may ask what is `!(i % 7)`. To understand this you need to know that in C, `false` is just an alias of `0`, and any other number (usually `1`) represent `true`. So when `i` is a multiple of 7, `i % 7` will evaluate as `0`, then the NOT operator will reverse the `0` to `1`, then the whole condition will evaluate as `true`.
 
-I noticed a lot of students used `if (i % 7 != 0 && i % 5 != 0 && i % 3 != 0)`, while that works, you basically retyped the previous conditions once again, so it increases the chance of a typo and hence the chance of error. A better practice is to use `bool` variables as shown.
+I noticed a lot of students used `if (i % 7 != 0 && i % 5 != 0 && i % 3 != 0)`, while that works, you basically retyped the previous conditions once again, so it increases the chance of a typo and hence the chance of error. A better practice is to use a `bool` variable as shown.
 
 `else if` won't work here, because for a number like 35, which is a multiple of 3, 5, and 7, it will see that it is a muliple of 7 first. Then, because the first condition is fulfilled, it won't check the other conditions. The result is, the console will only output `*clap*` for 35, which is not correct.
 
@@ -192,7 +192,7 @@ Suppose the first line of the triangle is line 0, which is represented by the va
 
 Notice that the number of spaces before the first star on each line is really `height - line number - 1`, hence `for (int j = 0; j < height - 1 - i; ++j) printf(" ");`, which prints a space `height - line number - 1` times.
 
-Then, notice that the number of stars in each line is really `1 + line nubmer * 2`, hence `for (int j = 0; j <= 2 * i; ++j) printf("*");`, which prints the `*` character `1 + line nubmer * 2` times. Note the use of `<=` instead of the usual `<` in the condition of this for loop.
+Then, notice that the number of stars on each line is really `1 + line nubmer * 2`, hence `for (int j = 0; j <= 2 * i; ++j) printf("*");`, which prints the `*` character `1 + line nubmer * 2` times. Note the use of `<=` instead of the usual `<` in the condition of this for loop.
 
 ## 8. Find greatest number(BONUS)
 
