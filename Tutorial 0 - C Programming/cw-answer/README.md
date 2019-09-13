@@ -190,7 +190,7 @@ Suppose the first line of the triangle is line 0, which is represented by the va
 
 Notice that the number of spaces before the first star on each line is really `height - line number - 1`, hence `for (int j = 0; j < height - 1 - i; ++j) printf(" ");`, which prints a space `height - line number - 1` times.
 
-Then, notice that the number of stars in each line is really `1 + line nubmer * 2`, hence `for (int j = 0; j <= 2 * i; ++j) printf("*");`, which prints the `*` character `1 + line nubmer * 2` times. Note the use of `<=` instead of the usual `<` in the condition of this for loop.
+Then, notice that the number of stars on each line is really `1 + line nubmer * 2`, hence `for (int j = 0; j <= 2 * i; ++j) printf("*");`, which prints the `*` character `1 + line nubmer * 2` times. Note the use of `<=` instead of the usual `<` in the condition of this for loop.
 
 ## 8. Find greatest number(BONUS)
 
