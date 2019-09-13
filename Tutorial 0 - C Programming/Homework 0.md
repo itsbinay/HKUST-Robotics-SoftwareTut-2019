@@ -205,7 +205,7 @@ int CountInnerParameter(char in[], int len)  {
 }
 ```
 
-- Write the function `CountInnerParameter` in a file called `count.h` (no need separate .c file).
+- Write the function `CountInnerParameter` in a file called `count.c`.
 - Send the `count.c` file directly as submission, don't need to zip.
 
 #### Expected output
