@@ -4,6 +4,8 @@ Author: Ho Yu Yat (yyhoai@connect.ust.hk) (2019)
 
 If you have any questions about the answers, you are very welcome to WhatsApp me at 68499100 or by email.
 
+These are by no means THE best way to accomplish the task, it's the best I can do.
+
 You may see some slightly unusual ways of using the for loop in some of the answers, just keep in mind that the following for loop
 ```c
 for (int i = 0; i < 5; ++i) {
