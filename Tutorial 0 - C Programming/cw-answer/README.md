@@ -2,8 +2,6 @@ Author: Ho Yu Yat (yyhoai@connect.ust.hk) (2019)
 
 # Classwork 0 Answers
 
-If you have any questions about the answers, you are very welcome to WhatsApp me at 68499100 or by email.
-
 You may see some slightly unusual ways of using the for loop in some of the answers, just keep in mind that the following for loop
 ```c
 for (int i = 0; i < 5; ++i) {
@@ -23,6 +21,8 @@ is the short form of the following code
 then it should be easier to understand what my code is doing.
 
 **Note that the whole code is enclosed in a compound statement `{}`, this is very important, as it implies that the everything in the foor loop is enclosed in a scope, which means that any code outside the for loop cannot access anything that is defined within the for loop.**
+
+As usual, you are very welcome to send email to me if you have any further questions about these answers.
 
 ## 1. Modifying Hello World
 
@@ -88,20 +88,20 @@ Note that I did not use braces `{}` here, that is because when there is only 1 s
 
 int main() {
     for (int i = 1; i <= 100; ++i) {
-        bool isDiv7 = false, isDiv3 = false, isDiv5 = false;
+        bool isDiv = false;
         if (!(i % 7)) {
             printf("*clap*\n");
-            isDiv7 = true;
+            isDiv = true;
         }
         if (!(i % 3)) {
             printf("*click*\n");
-            isDiv3 = true;
+            isDiv = true;
         }
         if (!(i % 5)) {
             printf("*stomp*\n");
-            isDiv5 = true;
+            isDiv = true;
         }
-        if (!isDiv3 && !isDiv5 && !isDiv7) printf("%d\n", i);
+        if (!isDiv) printf("%d\n", i);
     }
 
     return 0;
@@ -110,7 +110,7 @@ int main() {
 
 You may ask what is `!(i % 7)`. To understand this you need to know that in C, `false` is just an alias of `0`, and any other number (usually `1`) represent `true`. So when `i` is a multiple of 7, `i % 7` will evaluate as `0`, then the NOT operator will reverse the `0` to `1`, then the whole condition will evaluate as `true`.
 
-I noticed a lot of students used `if (i % 7 != 0 && i % 5 != 0 && i % 3 != 0)`, while that works, you basically retyped the previous conditions once again, so it increases the chance of a typo and hence the chance of error. A better practice is to use `bool` variables as shown.
+I noticed a lot of students used `if (i % 7 != 0 && i % 5 != 0 && i % 3 != 0)`, while that works, you basically retyped the previous conditions once again, so it increases the chance of a typo and hence the chance of error. A better practice is to use a `bool` variable as shown.
 
 `else if` won't work here, because for a number like 35, which is a multiple of 3, 5, and 7, it will see that it is a muliple of 7 first. Then, because the first condition is fulfilled, it won't check the other conditions. The result is, the console will only output `*clap*` for 35, which is not correct.
 
