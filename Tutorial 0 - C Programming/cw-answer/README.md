@@ -60,6 +60,29 @@ int main() {
 
 A temporary variable `temp` is used to temporarily store the value of `cup_x`, then after `cup_x` got assigned the value of `cup_y`, the original value of `cup_x` is assigned to `cup_y` via the use of `temp`.
 
+**Edit**: Someone (forgot your name sorry :P) suggested a very interesting solution. It is not as straight-forward, but the advantage is that it saves the memory originally used by `temp`.
+```c
+#include <stdio.h>
+
+int main() {
+    float cup_x = 3.4f;
+    float cup_y = 2.7f;
+
+    cup_x += cup_y; //Step 1
+    cup_y = cup_x - cup_y; //Step 2
+    cup_x = cup_x - cup_y; //Step 3
+
+    printf("Cup X now contains %fml.\n", cup_x);
+    printf("Cup Y now contains %fml.", cup_y);
+    return 0;
+}
+```
+
+Steps:
+1. `cupx` gets the new value `cup_x + cup_y`.
+2. `cup_y` gets the new value `cup_x - cup_y`, which expands as `cup_x + cup_y - cup_y` == `cup_x`.
+3. `cup_x` gets the new value `cup_x - cup_y`. Since `cup_y` now stores the original value of `cup_x`, `cup_x - cup_y` expands as `cup_x + cup_y - cup_x` == `cup_y`.
+
 ## 3. Discount Eligibility
 
 ```c
