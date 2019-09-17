@@ -4,6 +4,13 @@ PIC: Ho Yu Yat, Gurung Binay, Kelvin Leonardo Hartono<br>
 General Enquiry: robotics@ust.hk<br>
 Tutorial Enquiry: yyhoai@connect.ust.hk, bgurung@connect.ust.hk, klhartono@connect.ust.hk ```(plz also cc robotics@ust.hk)```<br>
 
+## Useful Links
+
+- Basic info of software tutorials:  
+https://drive.google.com/open?id=1eJE28T4wO5gVBe8oexRli2H-ZnqXz5y3kjzwsQ6PO1Q
+- Swapping discipline info:  
+https://drive.google.com/open?id=1FTEMzuDSpqerhqMLpmIQRglpB1Bh5ilz_VDzZOk6-Aw
+
 ## Basic tutorial schedule
 
 | | Monday | Tuesday | Wednesday | Thursday | Friday| Saturday-1|Saturday-2| Saturday-3
