@@ -1,6 +1,7 @@
 # Tutorial 1: GPIO
 
 Authors: Joseph Lam, Binay Gurung, Anshuman Medhi
+
 Contact: mhlamaf@ust.hk, bgurung@ust.hk, amedhi@dontemailme.com
 
 ## Basic
@@ -456,7 +457,8 @@ uint8_t led = 1;
 Note: `#define` can also be used to define macro function, but we won't discuss that in here.
 
 ### Finite State Machine (FSM)
-When you are writing a program for a robot, your robots will normally have `"finite"` states and each state will have respective instructions/lines of code your robot will want to execute. We can do so by writing a finite state machine. `A finite state machine` is a useful tool as it allows you to not only make your code more readable but also make your life much easier to debug. A simple finite state machine is practically consist of a `switch-case`.
+
+When designing a robots program, or many other systems in fact, it is useful to think of the program as having some finite number of states such that each state has different actions to perform, each state has different conditions for moving to a new state and (optionally) while changing states a certain action is performed. This is useful as it is a very structured way of thinking, can be drawn out in a flowchart and there is a very straightforward implementation pattern: the switch statement
 
 Example:
 ```C
@@ -467,7 +469,7 @@ typedef enum{
     HALT
 }RobotState;
 
-static RobotState currentState = { HALT };
+static RobotState currentState = HALT;
 
 while(1){
 
@@ -477,6 +479,9 @@ while(1){
         case FORWARD:
         {
             //instructions to execute while at forward-state
+	    if (hitARoadBlock()) { //A conditional state transition
+	    	state = BACKWARD;
+	    }
             break;
         }
         case BACKWARD:
@@ -487,12 +492,19 @@ while(1){
         case HALT:
         {
             //instructions to execute while at halt-state
+	    if (userSaysGoGoGo()) {
+	    	state = FORWARD;
+		//Optionally do something
+	    }
             break;
         }
 
     }
 }
 ```
+
+The switch statement is not the only way of implementing it, but any way you do it, the structured thinking you do when designing a state machine is valuable. As an exercise try and think how the edge triggering problem from before can be formulated as a finite state machine
+
 <br>
 
 ## Homework
