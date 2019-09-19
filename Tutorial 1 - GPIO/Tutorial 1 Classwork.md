@@ -17,7 +17,7 @@
 > - There is a 500ms delay between two beep
 > - LEDs will light up alternatively
 > - Only 1 LED should be on at the same time<br>
-> e.g. [LED1 on(500ms)] -> (after 500ms) -> [LED2 on(500ms)] -> (after 500ms) -> [LED1 on]...
+> e.g. [LED1 on(500ms)] -> (after 500ms) -> [LED2 on(500ms)] -> (after 500ms) -> [LED3 on]...
 
 #### *Classwork 3*
 > 1. Construct a program that: [10 pts]
