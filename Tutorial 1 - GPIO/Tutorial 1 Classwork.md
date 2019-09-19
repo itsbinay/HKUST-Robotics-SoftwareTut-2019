@@ -5,7 +5,7 @@
 > - check and update the state of all of your button being pressed<br>
 > e.g. if you are (physically) pressing button1, 
 > [btn1]'s state = pressd, else [btn1]'s state = notpressed
-> - given a button number(1 to 3), write a  function that will tell you whether that button is pressed or not
+> - given a button number(1 to 3), **write a  function** that will tell you whether that button is pressed or not
 > - Each button press should light up their respective LED <br>
 > When Button1 is pressed, Led1 will be on, otherwise Led1 is off
 > When button 2 is pressed, Led2 is on, otherwise Led2 is off.
