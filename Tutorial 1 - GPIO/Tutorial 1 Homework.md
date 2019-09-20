@@ -1,6 +1,6 @@
 # GPIO Homework
 
-**Note:** Finish your homework and demonstrate the program in CYT Rm3007B to any of the software seniors before 26/9.
+**Note:** Finish your homework and demonstrate the program in CYT Rm3007B to any of the software seniors before your next tutorial session.
 
 **Construct a program that contains different modes and fulfills the following requirments:**
 
