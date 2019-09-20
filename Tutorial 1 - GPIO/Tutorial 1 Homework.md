@@ -18,10 +18,10 @@ Initially, the value is 0, i.e. all LEDs are off.
 - When a button is clicked thrice within 1 second, it would be considered a triple-click.
 - If Button 2 is triple-clicked, enter Special Mode. ***[20 pts]***
   - The first two clicks are going to do binary rotation, so the value wouldn't be changed (reverse, then reverse back). However, the board will go into Special Mode when Button 2 is pressed for the third time; and the value should not be altered.
-- In Special Mode, the LEDs should perform this sequence:
-  - Beep with the buzzer for 500ms, turn off all LEDs.
+- In Special Mode, the LEDs should perform this sequence `n` times, with `n` being the value in Normal mode (e.g. Value is 101 (binary), then the sequence will repeat 5 times):
   - Keep silent for 500ms, meanwhile display the 3-bit value with the LEDs.
-- Triple-click Button 2 while in Special Mode to switch back to Normal Mode.
+  - Beep with the buzzer for 500ms, turn off all LEDs.
+- After the sequence ends, return to Normal Mode automatically.
 - Your demo ends here if you choose not to do Bonus Mode.
 
 ### Bonus Mode: Stupid lock [20/30 pts]
