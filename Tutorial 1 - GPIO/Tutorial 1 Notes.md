@@ -216,7 +216,7 @@ This function will turn the state of a GPIO PORT/PIN from one state to another:
 //Set the LED1 to high (turn on)
 HAL_GPIO_WritePin(LED1_GPIO_Port,LED1_Pin,GPIO_PIN_SET)
 //Set the LED2 to low (turn off)
-HAL_GPIO_WritePin(LED2_GPIO_Port,LED2_Pin,GPIO_PIN_RESET)l
+HAL_GPIO_WritePin(LED2_GPIO_Port,LED2_Pin,GPIO_PIN_RESET)
 
 // If LED2 is at GPIO_PIN_SET state, it will be set to GPIO_PIN_RESET state
 // If LED2 is at GPIO_PIN_RESET state, it will be set to GPIO_PIN_SET state
