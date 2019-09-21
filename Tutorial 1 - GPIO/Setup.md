@@ -1,7 +1,9 @@
 # Environment Setup and Program Flashing Guide
 
 ## Step 1: Setting Up CubeIDE
-1. Download and install STM32CubeIDE from here: https://www.st.com/en/development-tools/stm32cubeide.html
+1. Download and install STM32CubeIDE from here: https://www.st.com/en/development-tools/stm32cubeide.html</br></br>
+OR Direct dowload from google drive(MAC):https://drive.google.com/file/d/1ZyINYI8sb8h9HFTUyFLBYANeybwx1A3w/view?usp=sharing</br>
+Windows: https://drive.google.com/file/d/1LsHkf2g80rNZMFUmVmf2hettw7EhSIn4/view?usp=sharing</br>
  - , Guide for MacOS users, pay attention to step 4: https://www.st.com/content/ccc/resource/technical/document/user_manual/group1/31/8b/03/27/25/c5/4d/ae/DM00603964/files/DM00603964.pdf/jcr:content/translations/en.DM00603964.pdf
 2. Download and unzip `F1_Internal2019` and open with STM32CubeIDE
 - for Windows, double click the .project file
