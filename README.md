@@ -66,7 +66,7 @@ Advanced Tutorial 3 - STM32 Timers/Counters aka encoder, ultrasonic etc
 ### Contact
 | Tutor/Helper | Email | Phone | Tutorial |
 | :---: | :---: | :---: | :---: |
-| Binay Gurung | bgurung@connect.ust.hk | | GPIO |
+| Binay Gurung | bgurung@connect.ust.hk | 96115977| GPIO |
 | Kelvin Leonardo Hartono | klhartono@connect.ust.hk | | PWM |
 | Ho Yu Yat | yyhoai@connect.ust.hk | | C Programming |
 | Umakant Datt Bhatt | udbhatt@connect.ust.hk | 55333042 | C Programming/GPIO |
