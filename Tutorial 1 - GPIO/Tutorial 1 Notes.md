@@ -295,10 +295,10 @@ HAL_GPIO_TogglePin(BUZZER_GPIO_Port,BUZZER_Pin);
 
 ```C
 // Initialising a button
-HAL_GPIO_InitPin(BUTTON1_GPIO_Port,BUTTON1_GPIO_Pin,GPIO_MODE_INPUT,GPIO_PULLUP);
+HAL_GPIO_InitPin(BUTTON1_GPIO_Port,BUTTON1_Pin,GPIO_MODE_INPUT,GPIO_PULLUP);
 // Remember the onboard button must be used with a pull up resistor
 
-uint8_t pressed = HAL_GPIO_ReadPin(BUTTON1_GPIO_Port,BUTTON1_GPIO_Pin);
+uint8_t pressed = HAL_GPIO_ReadPin(BUTTON1_GPIO_Port,BUTTON1_Pin);
 // Remember the onboard button will give a low signal when clicked, and a high signal otherwise
 ```
 
