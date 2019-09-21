@@ -177,7 +177,7 @@ typedef enum
 ##### Example:
 ```C
 // getting the GPIO1 input
-GPIO_PinState input = HAL_GPIO_ReadPin(BUTTON1_GPIO_PORT,BUTTON1_Pin);
+GPIO_PinState input = HAL_GPIO_ReadPin(BUTTON1_GPIO_Port,BUTTON1_Pin);
 ```
 
 <br>
