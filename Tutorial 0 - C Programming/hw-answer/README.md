@@ -4,7 +4,7 @@
 
 # Homework 0 Answers
 
-If you have any questions about the answers, you are very welcome to WhatsApp me at 68499100 or by email.
+If you have any questions about the answers, you are very welcome to contact me by email or come to lab while I am present.
 
 These are by no means THE best way to accomplish the task, it's the best I can do.
 

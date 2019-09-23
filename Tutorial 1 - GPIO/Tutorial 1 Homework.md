@@ -1,6 +1,6 @@
 # GPIO Homework
 
-**Note:** Finish your homework and demonstrate the program in CYT Rm3007B to any of the software seniors before 26/9.
+**Note:** Finish your homework and demonstrate the program in CYT Rm3007B to any of the software seniors before your next tutorial session.
 
 **Construct a program that contains different modes and fulfills the following requirments:**
 
@@ -10,18 +10,18 @@ The three LEDs represent three bits.</br>
 Initially, the value is 0, i.e. all LEDs are off.
 
 - Button 1 will perform increment. i.e. the value will be increased by 1. E.g. 010 -> 011, 011 -> 100 (binary)
-- Button 2 will perform binary rotation. i.e. all the bits will be reversed. E.g. 001 -> 100 (binary)
+- Button 2 will flip the bits left and right. i.e. all the bits will be reversed. E.g. 001 -> 100, 100 -> 001 (binary)
 - Button 3 will perform left shift. i.e. all bits moved to the left by 1 bit, the rightmost bit will be filled by 0. E.g. 011 -> 110, 001 -> 010 (binary)
 - Holding Button 1 and Button 2 for 2 seconds will reset the value to 0.
 
 ### Special Mode: Driving up the wall [40 pts]
 - When a button is clicked thrice within 1 second, it would be considered a triple-click.
 - If Button 2 is triple-clicked, enter Special Mode. ***[20 pts]***
-  - The first two clicks are going to do binary rotation, so the value wouldn't be changed (reverse, then reverse back). However, the board will go into Special Mode when Button 2 is pressed for the third time; and the value should not be altered.
-- In Special Mode, the LEDs should perform this sequence:
-  - Beep with the buzzer for 500ms, turn off all LEDs.
+  - The first two clicks are going to do flip the bits left and right, so the value wouldn't be changed (reverse, then reverse back). However, the board will go into Special Mode when Button 2 is pressed for the third time; and the value should not be altered.
+- In Special Mode, the LEDs should repeat this sequence `n` times, with `n` being the value in Normal mode (e.g. Value is 101 (binary), then the sequence will repeat 5 times):
   - Keep silent for 500ms, meanwhile display the 3-bit value with the LEDs.
-- Triple-click Button 2 while in Special Mode to switch back to Normal Mode.
+  - Beep with the buzzer for 500ms, turn off all LEDs.
+- After the sequence ends, return to Normal Mode automatically.
 - Your demo ends here if you choose not to do Bonus Mode.
 
 ### Bonus Mode: Stupid lock [20/30 pts]

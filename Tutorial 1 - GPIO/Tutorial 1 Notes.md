@@ -177,7 +177,7 @@ typedef enum
 ##### Example:
 ```C
 // getting the GPIO1 input
-GPIO_PinState input = HAL_GPIO_ReadPin(BUTTON1_GPIO_PORT,BUTTON1_PIN);
+GPIO_PinState input = HAL_GPIO_ReadPin(BUTTON1_GPIO_Port,BUTTON1_Pin);
 ```
 
 <br>
@@ -216,7 +216,7 @@ This function will turn the state of a GPIO PORT/PIN from one state to another:
 //Set the LED1 to high (turn on)
 HAL_GPIO_WritePin(LED1_GPIO_Port,LED1_Pin,GPIO_PIN_SET)
 //Set the LED2 to low (turn off)
-HAL_GPIO_WritePin(LED2_GPIO_Port,LED2_Pin,GPIO_PIN_RESET)l
+HAL_GPIO_WritePin(LED2_GPIO_Port,LED2_Pin,GPIO_PIN_RESET)
 
 // If LED2 is at GPIO_PIN_SET state, it will be set to GPIO_PIN_RESET state
 // If LED2 is at GPIO_PIN_RESET state, it will be set to GPIO_PIN_SET state
@@ -295,10 +295,10 @@ HAL_GPIO_TogglePin(BUZZER_GPIO_Port,BUZZER_Pin);
 
 ```C
 // Initialising a button
-HAL_GPIO_InitPin(BUTTON1_GPIO_Port,BUTTON1_GPIO_Pin,GPIO_MODE_INPUT,GPIO_PULLUP);
+HAL_GPIO_InitPin(BUTTON1_GPIO_Port,BUTTON1_Pin,GPIO_MODE_INPUT,GPIO_PULLUP);
 // Remember the onboard button must be used with a pull up resistor
 
-uint8_t pressed = HAL_GPIO_ReadPin(BUTTON1_GPIO_Port,BUTTON1_GPIO_Pin);
+uint8_t pressed = HAL_GPIO_ReadPin(BUTTON1_GPIO_Port,BUTTON1_Pin);
 // Remember the onboard button will give a low signal when clicked, and a high signal otherwise
 ```
 

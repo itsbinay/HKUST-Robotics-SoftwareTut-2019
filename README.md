@@ -20,10 +20,10 @@ https://drive.google.com/open?id=1FTEMzuDSpqerhqMLpmIQRglpB1Bh5ilz_VDzZOk6-Aw
 |Section| | | | S03 & S04 | S01 & S02 | |
 |Time| | | | 19:00 - 22:00|19:00 - 22:00| |
 |Venue| | | | Rm 2463 | Rm 2303 | |
-|**Date**| **16/9** |**17/9**|**18/9**|**19/9**|**20/9**|**21/9**|**21/9**| **21/9**|
-|Tutorial|| | |**Tutorial 1**|**Tutorial 1**|**Tutorial 1**|**Tutorial 1**|**Make Up - Tutorial 0 and 1**|
+|**Date**| **16/9** |**17/9**|**18/9**|**19/9**|**20/9**|**21/9**|**21/9**|
+|Tutorial|| | |**Tutorial 1**|**Tutorial 1**|**Tutorial 1**|**Tutorial 1**|
 |Section| | | | S01 | S02 | S03 | S04 |
-|Time|| | | 19:00 - 22:00|19:00 - 22:00|10:00 - 13:00| 15:00 - 18:00| 10:00 - 13:00 & 15:00 - 18:00|
+|Time|| | | 19:00 - 22:00|19:00 - 22:00|10:00 - 13:00| 15:00 - 18:00|
 |Venue| | | | Rm 2611 | Rm 2611 | Rm 1511 | Rm 1511 |
 |**Date**|**23/9**|**24/9**|**25/9**|**26/9**|**27/9**|**28/9**|**29/9**|
 |Tutorial| | | |**Tutorial 2**|**Tutorial 2**| **Tutorial 2**|**Tutorial 2**|
@@ -66,7 +66,7 @@ Advanced Tutorial 3 - STM32 Timers/Counters aka encoder, ultrasonic etc
 ### Contact
 | Tutor/Helper | Email | Phone | Tutorial |
 | :---: | :---: | :---: | :---: |
-| Binay Gurung | bgurung@connect.ust.hk | | GPIO |
+| Binay Gurung | bgurung@connect.ust.hk | 96115977| GPIO |
 | Kelvin Leonardo Hartono | klhartono@connect.ust.hk | | PWM |
 | Ho Yu Yat | yyhoai@connect.ust.hk | | C Programming |
 | Umakant Datt Bhatt | udbhatt@connect.ust.hk | 55333042 | C Programming/GPIO |
