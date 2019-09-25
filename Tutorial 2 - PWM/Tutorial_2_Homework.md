@@ -73,6 +73,7 @@ The task is split into several checkpoints. To get the points of a checkpoint, y
 
 ## Video Illustration
 [Here's a video](PWM%20Homework%20Illustration.avi) - Click "View raw"
+
 The attacks in the video (in order): [Light, Light, Light, Heavy], [Heavy], [Fully Charged Heavy]
 
 ## Changelog:
