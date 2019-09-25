@@ -25,7 +25,7 @@ When there is nothing to do, the weapon stays at Resting Angle of either side. A
 
 **A Heavy Attack** has 2 stages of movement. It starts at Resting Angle, moves away from the target any visible amount, pausing there (charging) until the player releases the Heavy Attack button. If the player had already released the button while the Heavy Attack was in queue, then there won't be any charging nor pausing. It then moves towards the target and ends at Resting Angle (of the opposite side).
 
-**A fully-charged Heavy Attack** is a Heavy Attack that has been charged for at least 1 second. 
+**A fully-charged Heavy Attack** is a Heavy Attack that has been charged for at least 2 seconds. 
 - A Heavy Attack in the first stage of its movement charges during the time the Heavy Attack button is held. While the Heavy Attack is being charged, it continues moving further away from the target while decelerating (during its initial movement). 
 - Once the heavy attack has been fully charged, a double short beep is played
 - If the Heavy Attack is a Fully Charged Heavy Attack, before it ends it overshoots the Resting Angle (of the opposite side), and after that comes back to it again.
