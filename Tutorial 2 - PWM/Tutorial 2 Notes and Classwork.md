@@ -64,8 +64,8 @@ A RC Servo is a little motor with a control circuit inbuilt, that allows you to 
 Individual servos may differ slightly on the parameters of the PWM signal however the major convention is as follows:
 
 1. PWM Frequency of 50Hz
-2. Midpoint is 1.5us on-time
-3. Leftmost position is 0.9us and Rightmost position is 2.1us
+2. Midpoint is 1.5ms on-time
+3. Leftmost position is 0.9ms and Rightmost position is 2.1ms
 
 ## How to Generate PWM Signals?
 
@@ -85,7 +85,7 @@ Every tick of the MCU clock increments the Prescaler Counter by 1. When this cou
 - This creates an infinite looping counter and a series of pulses at a ***reduced*** frequency compared to the MCU clock
 - Essentially this is a clock divider
 - The prescaler_frequency = clock_frequency / (prescaler + 1)
-- The output of the prescaler defines the smallest unit of time for the rest of the Timer (T_unit)
+- The output of the prescaler defines the smallest unit of time for the rest of the Timer (T_unit = 1/prescaler_frequency)
 
 Every pulse on the output of the prescaler increments the main counter. In a similar fashion to the Prescaler Counter, it resets on the tick after the **Auto-Reload Value**
 - Again, this creates a infinitely looping counter with a 
@@ -104,19 +104,24 @@ if (counter < compareX) {
 }
 ```
 - This generates 4 PWM Signals (from each channel) that have a common frequency but different on-time, off-time and duty-cycle
+- The duty cycle is OutputCompare / (AutoReload+1)
 
 ### Task 1 (30pts)
 
 Suppose that we want to control a servo using PWM. We know that the signal must have a frequency of 50Hz, and that the servo can recognize a difference in on-time of 4us.
 
-**1.** What is the correct timer frequency? *(5pts)*
+**1.** What is the correct prescaler frequency? *(5pts)*
+
 **2.** What is the required prescaler value? *5pts)*
+
 **3.** What is the correct auto-reload value? *(5pts)*
 
 Now assume the servo could recognize an infinitesimally small difference in on-time. So we would like to generate a PWM signal with as high as possible resolution to take advantage of this fact
 
 **4.** What is the correct timer frequency? *(5pts)*
+
 **5.** What is the required prescaler value? *(5pts)*
+
 **6.** What is the correct auto-reload value? *(5pts)*
 
 ### Okay okay but show me the code
