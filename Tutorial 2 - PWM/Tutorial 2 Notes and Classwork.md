@@ -90,7 +90,7 @@ Every tick of the MCU clock increments the Prescaler Counter by 1. When this cou
 Every pulse on the output of the prescaler increments the main counter. In a similar fashion to the Prescaler Counter, it resets on the tick after the **Auto-Reload Value**
 - Again, this creates a infinitely looping counter with a 
     - period equal to T_period = T_unit * (autoreload + 1)
-    - frequency equal to timer_frequency = prescaler_frequency / (autoreload + 1)
+    - frequency equal to pwm_frequency = prescaler_frequency / (autoreload + 1)
 - This counter is the basis for all functions of the Timer
 
 In Output Compare mode, each channel compares its individual threshold to the common Counter value and output a high or low signal based on this comparison
