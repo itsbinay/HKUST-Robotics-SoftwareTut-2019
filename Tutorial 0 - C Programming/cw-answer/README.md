@@ -79,7 +79,7 @@ int main() {
 ```
 
 Steps:
-1. `cupx` gets the new value `cup_x + cup_y`.
+1. `cup_x` gets the new value `cup_x + cup_y`.
 2. `cup_y` gets the new value `cup_x - cup_y`, which expands as `cup_x + cup_y - cup_y` == `cup_x`.
 3. `cup_x` gets the new value `cup_x - cup_y`. Since `cup_y` now stores the original value of `cup_x`, `cup_x - cup_y` expands as `cup_x + cup_y - cup_x` == `cup_y`.
 
@@ -137,7 +137,7 @@ You may ask what is `!(i % 7)`. To understand this you need to know that in C, `
 
 I noticed a lot of students used `if (i % 7 != 0 && i % 5 != 0 && i % 3 != 0)`, while that works, you basically retyped the previous conditions once again, so it increases the chance of a typo and hence the chance of error. A better practice is to use a `bool` variable as shown.
 
-`else if` won't work here, because for a number like 35, which is a multiple of 3, 5, and 7, it will see that it is a muliple of 7 first. Then, because the first condition is fulfilled, it won't check the other conditions. The result is, the console will only output `*clap*` for 35, which is not correct.
+`else if` won't work here, because for a number like 35, which is a multiple of 5 and 7, it will see that it is a muliple of 7 first. Then, because the first condition is fulfilled, it won't check the other conditions. The result is, the console will only output `*clap*` for 35, which is not correct.
 
 ## 5. Area of circle
 
@@ -213,7 +213,7 @@ Some of you over-complicated this problem, one of you is even thinking of concat
 
 Suppose the first line of the triangle is line 0, which is represented by the variable `i` in the code.
 
-Notice that the number of spaces before the first star on each line is really `height - line number - 1`, hence `for (int j = 0; j < height - 1 - i; ++j) printf(" ");`, which prints a space `height - line number - 1` times.
+Notice that the number of spaces before the first star on each line is really `height - line number - 1`, hence `for (int j = 0; j < height - 1 - i; ++j) printf(" ");`, which prints the space character `height - line number - 1` times.
 
 Then, notice that the number of stars on each line is really `1 + line nubmer * 2`, hence `for (int j = 0; j <= 2 * i; ++j) printf("*");`, which prints the `*` character `1 + line nubmer * 2` times. Note the use of `<=` instead of the usual `<` in the condition of this for loop.
 
