@@ -76,21 +76,22 @@ typedef enum{
 	LED2,
 	LED3
 }Leds;
+typedef struct{
+	Leds id;
+	GPIO_TypeDef *port;
+	uint16_t pin;
+}LedStruct;
+
+static LedStruct LEDS[3]={
+		{LED1,LED1_GPIO_Port,LED1_Pin},
+		{LED2,LED2_GPIO_Port,LED2_Pin},
+		{LED3,LED3_GPIO_Port,LED3_Pin}
+};
 void led_on(Leds ledid){
-	switch(ledid){
-		case LED1:HAL_GPIO_WritePin(LED1_GPIO_Port,LED1_Pin,GPIO_PIN_SET);break;
-		case LED2:HAL_GPIO_WritePin(LED2_GPIO_Port,LED2_Pin,GPIO_PIN_SET);break;
-		case LED3:HAL_GPIO_WritePin(LED3_GPIO_Port,LED3_Pin,GPIO_PIN_SET);break;
-		default:break;
-	}
+	HAL_GPIO_WritePin(LEDS[ledid].port,LEDS[ledid].pin,GPIO_PIN_SET);
 }
 void led_off(Leds ledid){
-	switch(ledid){
-		case LED1:HAL_GPIO_WritePin(LED1_GPIO_Port,LED1_Pin,GPIO_PIN_RESET);break;
-		case LED2:HAL_GPIO_WritePin(LED2_GPIO_Port,LED2_Pin,GPIO_PIN_RESET);break;
-		case LED3:HAL_GPIO_WritePin(LED3_GPIO_Port,LED3_Pin,GPIO_PIN_RESET);break;
-		default:break;
-	}
+	HAL_GPIO_WritePin(LEDS[ledid].port,LEDS[ledid].pin,GPIO_PIN_RESET);
 }
 //-----------------------------BUZZER---------------------------
 void buzzer_on(){
