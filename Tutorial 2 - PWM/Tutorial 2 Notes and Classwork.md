@@ -118,9 +118,9 @@ Suppose that we want to control a servo using PWM. We know that the signal must 
 
 Now assume the servo could recognize an infinitesimally small difference in on-time. So we would like to generate a PWM signal with as high as possible resolution to take advantage of this fact
 
-**4.** What is the correct timer frequency? *(5pts)*
+**4.** What is the optimium prescaler value? *(5pts)*
 
-**5.** What is the required prescaler value? *(5pts)*
+**5.** What is the resulting prescaler frequency? *(5pts)*
 
 **6.** What is the correct auto-reload value? *(5pts)*
 
@@ -176,7 +176,7 @@ Remember that motor control requires a 2nd pin, for direction, that is a normal 
 
 We recommend creating helper functions to deal with a motors pwm and direction pin as one
 
-1. Initialize the motor port and timer with a PWM Frequency of 5kHz and a suitable Timer frequency *[5pts]*
+1. Initialize the motor port and timer with a PWM Frequency of 5kHz and a suitable Prescaler frequency *[5pts]*
 2. Each time BUTTON1 is pressed, increase duty cycle by 10%, and each time BUTTON2 is pressed, decrease duty cycle by 10%, limiting to 0 and 100% *[10pts]*
 5. Extend the program to accept a duty cycle of -100% to 100%, such that -10% is equivalent to 10% duty cycle with a reverse direction. *[5pts]*
 6. Extend the program to work such that button presses change the final value just like the previous parts, but only changes the duty cycle at a rate of 10% per second. [10pts]
