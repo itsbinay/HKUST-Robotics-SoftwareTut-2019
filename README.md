@@ -54,9 +54,6 @@ Advanced Tutorial 1 - UART
 
 Advanced Tutorial 2 - Image processing and magnetic sensor
 
-Advanced Tutorial 3 - STM32 Timers/Counters aka encoder, ultrasonic etc
-
-
 ### Contact
 | Tutor/Helper | Email | Phone | Tutorial |
 | :---: | :---: | :---: | :---: |
