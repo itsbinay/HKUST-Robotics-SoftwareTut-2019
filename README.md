@@ -33,13 +33,13 @@ https://drive.google.com/open?id=1FTEMzuDSpqerhqMLpmIQRglpB1Bh5ilz_VDzZOk6-Aw
 
 ## Advanced tutorial schedule
 
-|          | Mon        | Tue        | Wed        | Thur       | Fri        | Sat-1      | Sat-2      |Sun|
+|          | Sat-1        | Sat-2        | Sun        | Mon       | Tue        | Wed      | Thur      |Fri|
 | -------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- |---|
-| **Date**     | **07/10** | **08/10** | **09/10** | **10/10** | **11/10** | **12/10** | **12/10** | **13/10**|
-| Tutorial |            | **Tutorial adv-1**  | **Tutorial adv-1** | | | **Tutorial adv-2**|**Tutorial adv-2** ||
-| Section  |            |   Section adv-A  | Section adv-B  | |  | Section adv-A  | Section adv-B  ||
-| Time     |            |      19:00 - 22:00 | 19:00 - 22:00  | |  | 10:00 - 17:00  | 15:00 - 18:00  ||
-| Venue    |            | |  | |         | | ||
+| **Date**     | **12/10** | **12/10** | **13/10** | **14/10** | **15/10** | **16/10** | **17/10** | **18/10**|
+| Tutorial | **Tutorial adv-1**  | **Tutorial adv-1** | | **Tutorial adv-2**||**Tutorial adv-2** |||
+| Section  | Section adv-A  | Section adv-B  || Section adv-A  || Section adv-B |||
+| Time     | 19:00 - 22:00 | 19:00 - 22:00  | | 10:00 - 17:00  || 15:00 - 18:00  |||
+| Venue    | Rm5510 | Rm5501 |  | Rm3598 |         | | ||
 
 ## Tutorial Topics
 
