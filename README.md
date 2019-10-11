@@ -38,7 +38,7 @@ https://drive.google.com/open?id=1FTEMzuDSpqerhqMLpmIQRglpB1Bh5ilz_VDzZOk6-Aw
 | **Date**     | **12/10** | **12/10** | **13/10** | **14/10** | **15/10** | **16/10** | **17/10** | **18/10**|
 | Tutorial | **Tutorial adv-1**  | **Tutorial adv-1** | | **Tutorial adv-2**||**Tutorial adv-2** |||
 | Section  | Section adv-A  | Section adv-B  || Section adv-A  || Section adv-B |||
-| Time     | 19:00 - 22:00 | 19:00 - 22:00  | | 10:00 - 17:00  || 15:00 - 18:00  |||
+| Time     | 10:00 - 13:00 | 15:00 - 18:00  | | 19:00 - 22:00  || 19:00 - 22:00  |||
 | Venue    | Rm5510 | Rm5501 |  | Rm3598 |         | | ||
 
 ## Tutorial Topics
@@ -50,7 +50,7 @@ Tutorial 1 - GPIO
 
 Tutorial 2 - PWM
 
-Advanced Tutorial 1 - UART
+Advanced Tutorial 1 - UART - TFT - HEADER
 
 Advanced Tutorial 2 - Image processing and magnetic sensor
 
