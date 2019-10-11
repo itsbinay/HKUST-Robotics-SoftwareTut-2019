@@ -79,7 +79,7 @@ If you are wondering what this is on line 94
 ```c
 #define TIME_NEVER 0xFFFFFFFF //max of uint32_t
 ```
-Whenever you add the prefix `0x` before an integer literal, this literal will be in hexadecimal format. 0xFFFFFFFF is just 2<sup>32</sup> or 16<sup>8</sup>.
+Whenever you add the prefix `0x` before an integer literal, this literal will be in hexadecimal format. 0xFFFFFFFF is just 2<sup>32</sup>-1 or 16<sup>8</sup>-1.
 
 Just FYI, if for some reason you want a number in octal (base 8), just add a `0` in front of the literal. So be careful, `0100` is different from `100` in C. :D
 
