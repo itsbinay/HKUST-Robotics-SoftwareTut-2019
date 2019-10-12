@@ -34,8 +34,8 @@ void tft_init(TFT_ORIENTATION orientation, uint16_t in_bg_color, uint16_t in_tex
 - orientation - ***Orientation of the monitor***
 - in_bg_color - ***Background color***
 - in_text_color - ***Text color***
-- in_text_color_sp - ***Special Text color***
-- in_higlight_color - ***Highlight color***
+- in_text_color_sp - ***Special Text color***   - string between "[...]"
+- in_higlight_color - ***Highlight color*** - string between "{...}"
 
 The parameters have already been defined for you in `lcd.h` header-file. It is defined as follows:
 ######  Orientation
@@ -116,6 +116,8 @@ while(1){
       Do not create another while(1)*/
     if(tft_update(50)==0){
         tft_prints(0,0,"Hello World");
+        tft_prints(0,1,"[Hello World]");    //This is a Special Text
+        tft_prints(0,2,"{Hello World}");    //This is a higlighted text
     }
 }
 ```
@@ -123,7 +125,7 @@ while(1){
 > By Jason Leong
 > Updated by Binay Gurung
 
-Universal Asynchronous Receiver-Transmitter (UART), is a protocol used for serial communication and is used when the rate of transmission is not a concern. For example, uart could be used to send control commands but it isn't not suitable to send high resolution images.
+Universal Asynchronous Receiver-Transmitter (UART), is a protocol used for serial communication and is used when the rate of transmission is not a concern. For example, uart could be used to send control commands but it isn't suitable to send high resolution images.
 
 In our embedded system, UART may commonly applied when establishing a communication protocol between two different boards or when trying to send data from an mobile/desktop application to your board using bluetooth. 
 
@@ -205,12 +207,19 @@ We use Coolterm for demonstration, but there are different ways to interact UART
 ##### Connecting STM32 to the computer via USB-TTL
 Locate the UART1/UART3 port on your STM32 (its below your ST-Link port/flashing port) and connect your TTL to the UART port as follows.
 
-|TTL | Uart Port|Bluetooth|
-|---|---|---|
-|`5V0`|`V`|`5V`|
-|`TXD`|`R`|`Tx`|
-|`RXD`|`T`|`Rx`|
-|`GND`|`G`|`G`|
+|TTL | Uart Port|
+|---|---|
+|`5V0`|`V`|
+|`TXD`|`R`|
+|`RXD`|`T`|
+|`GND`|`G`|
+
+|Bluetooth | Uart Port |
+|---|---|
+|`5V`|`V`|
+|`TX`|`R`|
+|`RX`|`T`|
+|`GND`|`G`|
 
 ###### Setting up and using CoolTerm
 Open coolterm and set up as below:
