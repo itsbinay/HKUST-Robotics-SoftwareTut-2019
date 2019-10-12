@@ -174,7 +174,7 @@ HAL_StatusTypeDef HAL_UART_ReceiveBytes_IT(UART_HandleTypeDef *huart,
 
 ##### Example of receiving data
 ``` C
-void receivedByte(HAL_UART_TypeDef* huart, uint8_t byte) {
+void receivedByte(UART_HandleTypeDef* huart, uint8_t byte) {
     //Do something with the byte you just received
 }
 
