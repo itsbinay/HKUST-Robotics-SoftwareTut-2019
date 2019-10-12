@@ -156,11 +156,14 @@ With 57600 and 115200 being the most common baud rates. **Make sure the baud rat
 USART1_Init(57600);
 ```
 ### Receiving data on your STM32
-To receive data on your STM32, we will use the function `HAL_UART_Receive`.
+To receive data on your STM32, we will use the function `HAL_UART_Receive` or `HAL_UART_ReceiveBytes_IT`.
 
 ###### Function Prototype
 ```C
 HAL_StatusTypeDef HAL_UART_Receive(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+
+HAL_StatusTypeDef HAL_UART_ReceiveBytes_IT(UART_HandleTypeDef *huart,
+		void (*RxBytesCallback)(struct __UART_HandleTypeDef *huart, const uint16_t byte));
 ```
 
 ###### Parameters
@@ -171,9 +174,16 @@ HAL_StatusTypeDef HAL_UART_Receive(UART_HandleTypeDef *huart, uint8_t *pData, ui
 
 ##### Example of receiving data
 ``` C
+void receivedByte(HAL_UART_TypeDef* huart, uint8_t byte) {
+    //Do something with the byte you just received
+}
+
 int main(){
     //....Initialisation stuffs
     USART1_Init(115200);    //Uart 1 initialised with 115200 baud rate
+
+    //Use either this - (1) - Do not call both
+    HAL_UART_ReceiveBytes_IT(&huart1,receivedByte);
 
     //Initialising your buffer variable
     char data[8];
@@ -183,6 +193,7 @@ int main(){
         Receive data from uart 1,
         store it in the data buffer "data"-variable,
         */
+        //Or use this - (2) - Do not call both
         HAL_UART_Receive(&huart1,data,8,10);
     }
 }
@@ -227,17 +238,16 @@ Local echo means that cool term will display what you typed and does not affect 
 ### Sending data from STM32 to your computer
 Other than for receiving data from another device on your board, you can also transmit data to other devices. This can come in handy in many ways for example, you could use coolTerm as your console for printing out the values while debugging and so forth.
 
-To send data from STM32,we can use the `HAL_UART_Transmit` function.
+To send data from STM32,we can use the `HAL_UART_Transmit_IT` function.
 
 ###### Function prototype
 ```C
-HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+HAL_StatusTypeDef HAL_UART_Transmit_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
 ```
 ###### Parameters
 - ***huart*** - indicate which uart port (either huart1 or huart3, defined at the top of usart.h) you are sending from
 - ***pData*** - data buffer (i.e. variable where the sent data will be stored)
 - ***Size*** - Amount of data to send (in bytes)
-- ***Timeout*** - Timeout duration in ms
 
 ##### Example of sending data
 ``` C
@@ -253,7 +263,7 @@ int main(){
         send data from uart 1,
         send the data in the "data"-variable,
         */
-        HAL_UART_Transmit(&huart1,data,8,10);
+        HAL_UART_Transmit_IT(&huart1,data,8);
     }
 }
 ```
