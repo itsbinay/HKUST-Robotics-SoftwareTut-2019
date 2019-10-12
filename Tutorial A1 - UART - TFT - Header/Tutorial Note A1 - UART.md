@@ -205,12 +205,12 @@ We use Coolterm for demonstration, but there are different ways to interact UART
 ##### Connecting STM32 to the computer via USB-TTL
 Locate the UART1/UART3 port on your STM32 (its below your ST-Link port/flashing port) and connect your TTL to the UART port as follows.
 
-|TTL | Uart Port|
-|---|---|
-|`5V0`|`V`|
-|`TXD`|`R`|
-|`RXD`|`T`|
-|`GND`|`G`|
+|TTL | Uart Port|Bluetooth|
+|---|---|---|
+|`5V0`|`V`|`5V`|
+|`TXD`|`R`|`Tx`|
+|`RXD`|`T`|`Rx`|
+|`GND`|`G`|`G`|
 
 ###### Setting up and using CoolTerm
 Open coolterm and set up as below:
@@ -275,7 +275,7 @@ int main(){
 >The way of configuring HC05 is provided, and other devices such as HC06, HM10 may be different
 1. Connect USB-TTL with your device as follows: 
    
-   |USB-TTL|Bluetooth|
+   |USB-TTL|Bluetooth| 
    |---|---|
    |`5V0`|`5V`|
    |`GND` |`GND`|
