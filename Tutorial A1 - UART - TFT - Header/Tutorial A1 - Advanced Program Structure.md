@@ -546,7 +546,7 @@ int main(){
 
 In C, everything has a memory location. A pointer is a variable whose **value** is the **address** of **another variable**, i.e., direct address of the memory location. When you see **\*** or **&** that is not used as a logic or a multiplication operator, a pointer is most likely involved.
 
-One of the usages of the pointer is to avoid passing the real variable around and declare global variables. In C, all function calls are "pass by value", which means a new copy of the variable is passed as the argument which will be terminated after the function return. Editing this copy will not apply to the original one, and creating a copy may sometime be time-consuming. On the other hand, if we pass the memory location, a copy of the pointer(which should be smaller in memory size) 
+One of the usages of the pointer is to avoid passing the real variable around and declare global variables. In C, all function calls are "pass by value", which means a new copy of the variable is passed as the argument which will be terminated after the function return. Editing this copy will not apply to the original one, and creating a copy may sometime be time-consuming. On the other hand, if we pass the memory location, a copy of the pointer(which should be smaller in memory size) would be less time-consuming whilst also allowing us to directly make changes in the variable of that memory location. 
 
 
 The type of a pointer is base on the type of variable it points to. For example, a pointer that point to an integer is an integer pointer. The notation is given by the original type plus a "*" after it. Adding "&" before a variable gives the address of the variable.
