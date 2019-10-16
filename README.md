@@ -39,7 +39,7 @@ https://drive.google.com/open?id=1FTEMzuDSpqerhqMLpmIQRglpB1Bh5ilz_VDzZOk6-Aw
 | Tutorial | **Tutorial adv-1**  | **Tutorial adv-1** | | **Tutorial adv-2**||**Tutorial adv-2** |||
 | Section  | Section adv-A  | Section adv-B  || Section adv-A  || Section adv-B |||
 | Time     | 10:00 - 13:00 | 15:00 - 18:00  | | 19:00 - 22:00  || 19:00 - 22:00  |||
-| Venue    | Rm5510 | Rm5501 |  | Rm3598 |         | Library Rm 1-354 & Library Rm LG4-07 | ||
+| Venue    | Rm5510 | Rm5501 |  | Rm3598 |         | Library Rm 1-352 & Library Rm LG4-07 | ||
 
 ## Tutorial Topics
 
