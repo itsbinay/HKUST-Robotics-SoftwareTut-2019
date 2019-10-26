@@ -1,4 +1,4 @@
-# HKUST Robotics Team Recruitment Software Tutorial 2019
+# HKUST Robotics Team Recruitment Software Tutorial 2019 (ENDED)
 
 PIC: Ho Yu Yat, Gurung Binay, Kelvin Leonardo Hartono<br>
 General Enquiry: robotics@ust.hk<br>
