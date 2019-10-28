@@ -12,7 +12,7 @@ for (int i = 0; i < 5; ++i) {
     printf("Test");
 }
 ```
-is the short form of the following code
+is equivalent to the following code
 ```c
 {
     int i = 0;
@@ -262,7 +262,7 @@ This method won't work for numbers larger than `INT_MAX` or smaller than `INT_MI
 
 Note: The for loop
 ```c
-for (; num != 0; num /= 10) {
+for (; num; num /= 10) {
     int temp = num % 10;
     if (temp > max) max = temp;
 }
@@ -271,7 +271,7 @@ will be expanded to
 ```c
 {
     ; //This is an empty statement, i.e. a statement that does nothing
-    while (num != 0) {
+    while (num) {
         int temp = num % 10;
         if (temp > max) max = temp;
         num /= 10;
