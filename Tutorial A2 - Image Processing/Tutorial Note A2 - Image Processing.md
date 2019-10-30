@@ -214,10 +214,11 @@ The TFT header have this function to print the camera image on the screen. `x` a
 void tft_print_image(void* buf, uint32_t x, uint32_t y, uint32_t w, uint32_t h);
 ```
 
-**This function only supports RGB565 array**. If you are using a greyscale array, you may define another RGB array `rgb` and pass into `i2` of this function to convert the array from greyscale to RGB.
+**This function only supports Big-Endian RGB565 array**. Regardless you are using Greyscale or RGB565, since our processor is Little-Endian, you need to define another array and call the following functions to convert the image to a printable format. You will then pass the resulting array into `tft_print_image()`.
 
 ```c
-void CAM_GreyToRGB565(uint8_t* img, uint16_t* i2);
+void CAM_GreyToRGB565(uint8_t* img, uint16_t* i2); //Use this if you are using greyscale
+void CAM_RGB565ToPrint(uint16_t* img, uint16_t* i2); //Use this if you are using RGB565
 ```
 
 ## Image Processing
